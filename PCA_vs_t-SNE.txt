@@ -1,0 +1,21 @@
+Both t-SNE and PCA are techniques used for dimensionality reduction, which is the process of reducing the number of random variables under consideration by obtaining a set of principal variables. The choice between t-SNE and PCA depends on the specific characteristics of your data and what you want to achieve with the dimensionality reduction.
+
+PCA (Principal Component Analysis):
+
+PCA is a linear dimensionality reduction technique.
+It tries to preserve the global structure of the data.
+PCA is computationally less expensive than t-SNE, especially for large datasets.
+PCA is deterministic, meaning it will always produce the same output when given the same input.
+PCA does not involve hyperparameters, making it simpler to use.
+PCA works by rotating the vectors for preserving variance.
+t-SNE (t-Distributed Stochastic Neighborhood Embedding):
+
+t-SNE is a non-linear dimensionality reduction technique.
+It tries to preserve the local structure (cluster) of data.
+t-SNE is one of the best dimensionality reduction techniques for visualization purposes.
+t-SNE involves hyperparameters such as perplexity, learning rate, and number of steps.
+t-SNE can handle outliers.
+t-SNE is a non-deterministic or randomized algorithm, meaning it can produce different outputs when run multiple times on the same data.
+t-SNE works by minimizing the distance between the point in a Gaussian.
+
+In summary, if your primary goal is to visualize clusters in your data, t-SNE may be the better choice. However, if you’re dealing with a very large dataset and computational resources or time are a concern, PCA might be more appropriate. Additionally, if you want to understand the importance of different features, PCA is a better choice because it provides a clear ranking of feature importance, something t-SNE does not provide.
